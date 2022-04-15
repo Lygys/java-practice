@@ -9,7 +9,7 @@ public class Wand {
 		return power;
 	}
 	public void setName(String name) {
-		if (name == nul || name.length() < 3 ) {
+		if (name == null || name.length() < 3 ) {
 			throw new IllegalArgumentException("杖に設定されようとしている名前が異常です");
 		}
 		this.name = name;
